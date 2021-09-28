@@ -1,0 +1,37 @@
+@import "../../components/color/Color.scss";
+
+.payment-container {
+  background-color: $color-grey-background;
+  padding: 8em 0 0 0;
+  height: 100vh;
+  .page-container {
+    background-color: $color-white;
+    padding: 2em;
+    width: 50%;
+    h3 {
+      color: $color-grey-2;
+      padding-bottom: 2em;
+    }
+    .bloc1,
+    .bloc2 {
+      border-bottom: 1px solid $color-grey-background;
+      padding-bottom: 1.5em;
+      p:nth-child(2) {
+        display: block;
+      }
+    }
+    p {
+      display: flex;
+      justify-content: space-between;
+    }
+    .bloc3 {
+      padding-top: 1.5em;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .payment-container {
+    padding: 12em 0 4em 0;
+  }
+}

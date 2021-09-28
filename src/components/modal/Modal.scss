@@ -1,0 +1,91 @@
+@import "../color/Color.scss";
+
+/* FORMS & MODAL*/
+.overlay {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-black-ligth4;
+}
+
+.modal {
+  z-index: 10;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .page-container .contactForm {
+    width: 300px;
+    background-color: $color-white;
+    padding: 2em;
+    position: relative;
+
+    .button-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: 0;
+      color: $color-black;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    form {
+      p {
+        margin: 1em 0;
+      }
+      input {
+        margin: 1em 0;
+
+        &:focus {
+          outline: none;
+        }
+      }
+      .inputText {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid $color-ligthPink-ligth3;
+        font-size: 16px;
+        font-weight: 300;
+
+        &::placeholder {
+          color: $color-grey-ligth6;
+        }
+        &::-webkit-input-placeholder {
+          color: $color-grey-ligth6;
+        }
+        &::-ms-input-placeholder {
+          color: $color-grey-ligth6;
+        }
+      }
+      .inputCheckBox {
+        margin-right: 1em;
+      }
+      .conditions {
+        color: $color-grey;
+        font-size: 12px;
+        line-height: normal;
+      }
+      button {
+        width: 100%;
+        margin: 2em 0 1em 0;
+      }
+      .redirection {
+        color: $color-blue;
+        font-size: 12px;
+        line-height: normal;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+}

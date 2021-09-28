@@ -1,0 +1,120 @@
+@import "../../components/color/Color.scss";
+
+.offerForm {
+  background-color: $color-grey-background;
+  padding: 8em 0 4em 0;
+  display: flex;
+  align-items: center;
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    form {
+      .form-item {
+        background-color: $color-white;
+        margin: 1em 0;
+        box-shadow: 1px 1px 3px 1px $color-grey;
+        display: flex;
+        flex-direction: column;
+        &:nth-child(2),
+        &:nth-child(3) {
+          div:not(:last-child) {
+            border-bottom: 1px solid $color-grey-ligth4;
+          }
+        }
+
+        div {
+          padding: 2em 1em;
+          display: flex;
+          justify-content: space-between;
+          &:first-child {
+            .input-file {
+              border: 1px dashed $color-grey-ligth4;
+            }
+            .input-file-error {
+              border: 1px solid red;
+              span {
+                color: red;
+                font-size: 13px;
+              }
+            }
+            div {
+              width: 58%;
+            }
+          }
+
+          .input-error {
+            border-bottom: 1px solid red;
+            &::placeholder {
+              color: red;
+            }
+          }
+
+          input {
+            border: 0;
+            border-bottom: 1px solid $color-grey-ligth4;
+            width: 60%;
+            &::placeholder {
+              color: $color-grey-ligth6;
+            }
+            &:focus {
+              outline: none;
+              border-bottom: 1px solid $color-blue;
+            }
+          }
+        }
+      }
+      .btn-position {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .offerForm {
+    .page-container {
+      margin: 0 2em;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .offerForm {
+    padding: 12em 0 4em 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .offerForm {
+    padding: 12em 0 4em 0;
+
+    .page-container {
+      form {
+        .form-item {
+          div {
+            &:first-child {
+              .input-file-error {
+                display: flex;
+                input {
+                  width: 70%;
+                }
+
+                span {
+                  width: 25%;
+
+                  text-align: center;
+                }
+              }
+              div {
+                width: 75%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

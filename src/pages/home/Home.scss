@@ -1,0 +1,128 @@
+
+
+@import "../../components/color/Color.scss";
+
+
+/* PAGINATION*/
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 2em 0;
+  a {
+    background-color: $color-grey-ligth4;
+    font-size: 12px;
+    text-decoration: none;
+    width: 2em;
+    height: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 2px;
+    color: $color-white;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-grey-ligth6;
+    }
+  }
+}
+
+/* OFFRES POSITIONNEMENT*/
+
+.offers-container {
+
+  margin: 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  .offer-container{
+    height:350px;
+    max-width: calc((100% - 40px) /5);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    &:not(:nth-child(5n)){
+      margin-right: 10px;
+    }
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+  .offers-container {
+    margin: 0 3em;
+    .offer-container{
+      max-width: calc((100% - 30px) /4);
+
+      &:not(:nth-child(5n)){
+        margin-right: 0;
+      }
+      &:not(:nth-child(4n)){
+        margin-right: 10px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 960px) {
+  .offers-container{
+    .offer-container{
+      max-width: calc((100% - 30px) /3);
+      padding-bottom: 20px;
+
+      &:not(:nth-child(4n)){
+        margin-right: 0;
+      }
+      &:not(:nth-child(3n)){
+        margin-right: 15px;
+      }
+    }
+  }
+ 
+
+}
+
+@media (max-width: 768px) {
+  .offers-container{
+    .offer-container{
+      max-width: calc((100% - 30px) /2);
+      height:400px;
+  
+      &:not(:nth-child(3n)){
+        margin-right: 0;
+      }
+      &:not(:nth-child(2n)){
+        margin-right: 30px;
+      }
+    }
+  
+  }
+
+
+}
+
+@media (max-width: 640px) {
+  .offers-container {
+    justify-content: center;
+    .offer-container{
+      max-width: 75%;
+      height:450px;
+      padding-bottom: 10px;
+    
+      &:not(:nth-child(2n)){
+        margin-right: 0;
+      }
+    }
+  }
+
+}

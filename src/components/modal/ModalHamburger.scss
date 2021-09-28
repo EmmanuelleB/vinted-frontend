@@ -1,0 +1,50 @@
+@import "../color/Color.scss";
+/* FORMS & MODAL*/
+.overlayP {
+    z-index: 5;
+    position: fixed;
+    top: 3em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-black-ligth4;
+    
+  }
+
+  .modalP {
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+
+    .page-container .menuForm {
+        background-color: $color-white;
+        border-top: 1px solid $color-grey-background;
+        position: fixed;
+        top: 3em;
+        left: 0;
+        right: 0;
+        padding: 1em;
+        display:flex;
+        flex-direction : column;
+
+        button{
+      
+           
+           
+            margin:0.5em;
+    
+    
+        }
+        a {
+            display:flex;
+            flex-direction : column;
+            text-decoration: none;
+    
+
+        }
+    
+    }
+    
+}

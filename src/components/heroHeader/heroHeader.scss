@@ -1,0 +1,75 @@
+@import "../color/Color.scss";
+
+.hero-container {
+    margin-top: 8vh;
+    min-height: 65vh;
+    position: relative;
+    background-image: url(../../assets/images/heroHeader.jpg);
+    background-size: cover;
+    background-position: right;
+    .tearImage {
+        position: absolute;
+        background-image: url(../../assets/images/tear.svg);
+        background-position: bottom -1px right -1px;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        .page-container {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            .title-container {
+                background-color: $color-white;
+                width: 35%;
+                padding: 30px;
+                h1 {
+                    width: 100%;
+                    padding-bottom: 30px;
+                    line-height: 50px;
+                  }
+            }
+        }
+      }
+  }
+    
+  .title-container-xs {
+    display: none;
+  }
+
+  
+  @media (max-width: 1200px) {
+    .title-container {
+      margin-left: 2em;
+    }
+  }
+  
+  @media (max-width: 960px) {
+    .title-container {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-container {
+      justify-content: center;
+      .title-container {
+        display: none;
+      }
+    }
+  
+    .title-container-xs {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1em;
+      padding: 0 2em;
+      h1 {
+        text-align: center;
+        padding-bottom: 30px;
+        line-height: 50px;
+      }
+    }
+
+  }
+  

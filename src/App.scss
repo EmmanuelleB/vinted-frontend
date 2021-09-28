@@ -1,0 +1,91 @@
+
+@import "./components/color/Color.scss";
+
+/* Other rules */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+/* BUTTONS*/
+.button-blue {
+  background-color: $color-blue;
+  color: $color-white;
+  border: 0;
+  border-radius: 5px;
+  padding: 0.5em 2em;
+  cursor: pointer;
+}
+
+.button-pink {
+  background-color: $color-pink;
+  color: $color-white;
+  border: 0;
+  border-radius: 5px;
+  padding: 0.5em 2em;
+  cursor: pointer;
+}
+
+.button-blue-big {
+  background-color: $color-blue;
+  color: $color-white;
+  border: 0;
+  border-radius: 5px;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.button-border-blue {
+  background-color: $color-white;
+  color: $color-blue;
+  border: 1px solid $color-blue;
+  border-radius: 5px;
+  padding: 0.5em 2em;
+  cursor: pointer;
+}
+
+/* TITLES & FONTS*/
+h1 {
+  font-size: 34px;
+  color: $color-black;
+}
+
+h2 {
+  color: $color-black;
+  font-size: 24px;
+  font-weight: 300;
+}
+h3 {
+  color: $color-black;
+  font-size: 16px;
+}
+
+p {
+  color: $color-black;
+  font-size: 14px;
+}
+
+button {
+  font-size: 14px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  /* BUTTONS*/
+  .button-blue {
+    padding: 0.5em 1em;
+  }
+  .button-pink {
+    padding: 0.5em 1em;
+  }
+  .button-blue-big {
+    padding: 0.5em 1em;
+  }
+  .button-border-blue {
+    padding: 0.5em 1em;
+  }
+}
