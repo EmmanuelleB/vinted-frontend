@@ -2,7 +2,6 @@
 
 header {
   background-color: $color-white;
-//  border: 2px solid red; 
   padding: 10px 0;
   display: flex;
   align-items: center;
@@ -32,6 +31,7 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       .search-container {
         flex: 1;
 
@@ -72,6 +72,10 @@ header {
           .switch-bar-container {
             display: flex;
             align-items: center;
+
+            .title {
+              margin-right: 1em;
+            }
           }
 
           .range-bar-container {
@@ -105,14 +109,14 @@ header {
                 }
               }
             }
-          }
-          span {
-            margin-right: 5px;
+            .title {
+              margin-right: 1em;
+            }
           }
         }
       }
       .button-container {
-        flex: 1;
+        // flex: 1;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -120,8 +124,10 @@ header {
           display: flex;
           justify-content: center;
           margin: 0 1em;
+
           button:first-child {
             margin-right: 1em;
+            margin-left: 3em;
           }
         }
       }
@@ -150,6 +156,107 @@ header {
 @media (max-width: 960px) {
   header {
     .page-container {
+      margin: 0;
+      padding: 0 0.5em;
+      .line1 {
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid $color-grey-ligth2;
+        .icon-bars {
+          display: block;
+          color: $color-grey;
+          font-size: 1.5em;
+        }
+        .search-container {
+          display: none;
+        }
+        .button-container {
+          display: none;
+        }
+      }
+      .line2 {
+        margin-top: 0.7em;
+        display: block;
+        position: relative;
+        .search-item {
+          position: relative;
+          input {
+            height: 100%;
+            width: 100%;
+            border: 0;
+            background-color: $color-grey-ligth2;
+            padding: 0.5em 0;
+            border-radius: 5px;
+            &::placeholder {
+              color: $color-grey-ligth6;
+              padding-left: 2em;
+            }
+          }
+          .icon-search {
+            color: $color-grey;
+            position: absolute;
+            left: 5px;
+            top: 8px;
+          }
+        }
+      }
+      .line3 {
+        margin-top: 1.7em;
+        display: flex;
+        justify-content: space-around;
+        .switch-bar-container {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          .title {
+            margin: 0 1em;
+          }
+        }
+        .range-bar-container {
+          display: flex;
+          align-items: center;
+          .range {
+            width: 230px;
+            .bar-range {
+              height: 6px;
+              width: 100%;
+              border-radius: 14px;
+            }
+            .cursor {
+              height: 14px;
+              width: 14px;
+              border-radius: 14px;
+              background-color: $color-blue;
+              border: 1px solid $color-white;
+              position: relative;
+              &:focus {
+                outline: none;
+              }
+              .price {
+                position: absolute;
+                font-size: 11px;
+                top: -18px;
+                color: $color-white;
+                background-color: $color-blue;
+                padding: 3px;
+                border-radius: 3px;
+              }
+            }
+          }
+          .title {
+            margin: 0 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  header {
+    .page-container {
+      margin: 0;
+      padding: 0 0.8em;
       .line1 {
         padding-bottom: 0.5em;
         border-bottom: 1px solid $color-grey-ligth2;
@@ -195,15 +302,21 @@ header {
         margin-top: 1.7em;
         display: flex;
         justify-content: space-between;
+
         .switch-bar-container {
           display: flex;
+          justify-content: flex-start;
           align-items: center;
+
+          .title {
+            margin: 0;
+          }
         }
         .range-bar-container {
           display: flex;
           align-items: center;
           .range {
-            width: 230px;
+            width: 150px;
             .bar-range {
               height: 6px;
               width: 100%;
@@ -230,9 +343,9 @@ header {
               }
             }
           }
-        }
-        span {
-          margin-right: 5px;
+          .title {
+            margin: 0 0.8em 0 0;
+          }
         }
       }
     }

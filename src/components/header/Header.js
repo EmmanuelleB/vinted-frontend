@@ -1,4 +1,3 @@
-
 import "./Header.scss";
 import logo from "../../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -77,7 +76,6 @@ const Header = (props) => {
           handleOpenSignupModal={handleOpenSignupModal}
           setIsLoginModalOpen={setIsLoginModalOpen}
         />
-
       </Modal>
 
       <Modal
@@ -87,11 +85,16 @@ const Header = (props) => {
         overlayClassName="overlayP"
         className="modalP"
       >
-        <ModalHamburger token={token} handleSend={handleSend} handleOpenSignupModal={handleOpenSignupModal} handleOpenLoginModal={handleOpenLoginModal} handleLogOut={handleLogOut} handleCloseHamburgerModal={handleCloseHamburgerModal}/>
-
+        <ModalHamburger
+          token={token}
+          handleSend={handleSend}
+          handleOpenSignupModal={handleOpenSignupModal}
+          handleOpenLoginModal={handleOpenLoginModal}
+          handleLogOut={handleLogOut}
+          handleCloseHamburgerModal={handleCloseHamburgerModal}
+        />
       </Modal>
-      
-    
+
       <header>
         <div className="page-container">
           <div className="line1">
@@ -105,10 +108,10 @@ const Header = (props) => {
               </div>
               <div className="filters-items">
                 <div className="switch-bar-container">
-                  <span>Trier par :</span> <Switchbar sort={sort} handleSort={handleSort} />
+                  <span className="title">Trier par :</span> <Switchbar sort={sort} handleSort={handleSort} />
                 </div>
                 <div className="range-bar-container">
-                  <span>Prix entre :</span>
+                  <span className="title">Prix entre :</span>
                   <div className="range">
                     <Range
                       step={5}
@@ -192,11 +195,11 @@ const Header = (props) => {
                 </button>
               )}
             </div>
-            {isHamburgerModalOpen ? 
-            <FontAwesomeIcon icon="times" className="icon-bars"  onClick={handleCloseHamburgerModal} /> :
-            <FontAwesomeIcon icon="bars" className="icon-bars"  onClick={handleOpenHamburgerModal} />
-            }
-            
+            {isHamburgerModalOpen ? (
+              <FontAwesomeIcon icon="times" className="icon-bars" onClick={handleCloseHamburgerModal} />
+            ) : (
+              <FontAwesomeIcon icon="bars" className="icon-bars" onClick={handleOpenHamburgerModal} />
+            )}
           </div>
           <div className="line2">
             <div className="search-item">
@@ -206,10 +209,10 @@ const Header = (props) => {
           </div>
           <div className="line3">
             <div className="switch-bar-container">
-              <span>Trier par :</span> <Switchbar sort={sort} handleSort={handleSort} />
+              <span className="title">Trier par :</span> <Switchbar sort={sort} handleSort={handleSort} />
             </div>
             <div className="range-bar-container">
-              <span>Prix entre :</span>
+              <span className="title">Prix entre :</span>
               <div className="range">
                 <Range
                   step={5}

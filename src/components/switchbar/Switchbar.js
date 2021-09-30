@@ -4,7 +4,7 @@ const Switchbar = (props) => {
   const { sort, handleSort } = props;
 
   return (
-    <>
+    <div className="switbar-container">
       <input
         checked={sort}
         onChange={handleSort}
@@ -16,7 +16,7 @@ const Switchbar = (props) => {
       <label className="react-switch-label" htmlFor="reactSwitchNew1">
         <span className={`react-switch-button`} />
       </label>
-    </>
+    </div>
   );
 };
 
