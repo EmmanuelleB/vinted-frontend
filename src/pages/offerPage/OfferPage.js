@@ -6,6 +6,7 @@ import OfferPageInfos from "../../components/offerPageInfos/OfferPageInfos";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import MobileDetect from "mobile-detect";
+import ReactLoading from "react-loading";
 
 const OfferPage = (props) => {
   const { token, handleSend } = props;
