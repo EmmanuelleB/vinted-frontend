@@ -23,7 +23,7 @@ const Payment = (props) => {
           <div>
             <p>
               <span>Commande</span>
-              <span>{location.state.price} €</span>
+              <span>{location.state.price.toFixed(2)} €</span>
             </p>
           </div>
           <div>
@@ -43,11 +43,12 @@ const Payment = (props) => {
           <div>
             <p className="bold">
               <span>Total</span>
-              <span>{total}€</span>
+              <span>{total.toFixed(2)}€</span>
             </p>
             <p>
               Il ne vous reste plus qu'un étape pour vous offrir <span className="bold">{location.state.title}</span>.
-              Vous allez payer <span className="bold">{total} €</span>(frais de protection et frais de port inclus).
+              Vous allez payer <span className="bold">{total.toFixed(2)} €</span>(frais de protection et frais de port
+              inclus).
             </p>
           </div>
         </div>

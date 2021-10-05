@@ -8,7 +8,7 @@ const OfferPageInfos = (props) => {
   return (
     <>
       <div className="bloc1">
-        <h2>{offer.product_price} €</h2>
+        <h2>{offer.product_price.toFixed(2)} €</h2>
 
         {offer.product_details.map((elem, index) => {
           const keys = Object.keys(elem);

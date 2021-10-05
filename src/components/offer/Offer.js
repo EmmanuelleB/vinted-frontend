@@ -33,7 +33,7 @@ const Offer = (props) => {
       </div>
 
       <img className="offer-product" src={offer.product_image.picture1.secure_url} alt={offer.product_name} />
-      <p>{offer.product_price} €</p>
+      <p>{offer.product_price.toFixed(2)} €</p>
       <p className="grey-txt">{sizeOffer(offer.product_details)}</p>
       <p className="grey-txt">{brandOffer(offer.product_details)}</p>
       {/* {offer.product_details.map((elem, index) => {

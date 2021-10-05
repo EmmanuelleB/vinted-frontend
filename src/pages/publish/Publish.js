@@ -67,6 +67,7 @@ const Publish = (props) => {
       formData.append("condition", values.condition);
       formData.append("city", values.city);
       formData.append("brand", values.brand);
+
       formData.append("price", values.price);
 
       console.log(formData);

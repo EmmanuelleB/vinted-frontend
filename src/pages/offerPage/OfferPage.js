@@ -76,25 +76,22 @@ const OfferPage = (props) => {
         </div>
       ) : (
         <div className="page-container">
-          <div className="col-1">
+          <>
             <Carousel
               responsive={responsive}
               ssr
               showDots
               autoPlay={deviceType !== "mobile" ? true : false}
-              // autoPlaySpeed={1000}
-              // keyBoardControl
               infinite
-              containerClass="carousel-container"
-              removeArrowOnDeviceType={["tablet", "mobile"]}
-              // itemClass="image-item"
+              containerClass="carousel-container col-1"
+              // removeArrowOnDeviceType={["tablet", "mobile"]}
               deviceType={deviceType}
             >
               {picturesArray.map((item, index) => {
                 return <img key={index} src={pictures[item].secure_url} alt="offer.product_name" />;
               })}
             </Carousel>
-          </div>
+          </>
           <div className="col-2">
             <OfferPageInfos offer={offer} token={token} handleSend={handleSend} />
           </div>

@@ -9,27 +9,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .react-multi-carousel-dot-list {
+      margin-bottom: 1em;
+    }
     .col-1 {
-      height: calc(400px + 4em);
+      max-height: 70vh;
       width: 600px;
 
-      .carousel-container {
-        z-index: 1;
-        height: 100%;
+      img {
         width: 100%;
-
-        img {
-          width: 100%;
-          max-height: 500px;
-          object-fit: cover;
-        }
+        // object-fit: cover;
       }
     }
+    // }
 
     .col-2 {
       background-color: $color-white;
       padding: 2em;
-      height: 400px;
+      max-height: 70vh;
       width: 300px;
       margin-left: 2em;
       display: flex;
