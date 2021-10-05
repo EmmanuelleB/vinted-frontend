@@ -42,7 +42,7 @@ header {
 
           input {
             height: 100%;
-            width: 96%;
+            width: 92%;
             border: 0;
             background-color: $color-grey-ligth2;
             padding: 0.5em 0 0.5em 2em;
@@ -181,14 +181,17 @@ header {
           position: relative;
           input {
             height: 100%;
-            width: 100%;
+            width: 94%;
             border: 0;
             background-color: $color-grey-ligth2;
-            padding: 0.5em 0;
+            padding: 0.5em 0 0.5em 2em;
             border-radius: 5px;
             &::placeholder {
               color: $color-grey-ligth6;
               padding-left: 2em;
+            }
+            &:focus {
+              outline: none;
             }
           }
           .icon-search {
@@ -257,47 +260,7 @@ header {
     .page-container {
       margin: 0;
       padding: 0 0.8em;
-      .line1 {
-        padding-bottom: 0.5em;
-        border-bottom: 1px solid $color-grey-ligth2;
-        .icon-bars {
-          display: block;
-          color: $color-grey;
-          font-size: 1.5em;
-        }
-        .search-container {
-          display: none;
-        }
-        .button-container {
-          display: none;
-        }
-      }
-      .line2 {
-        margin-top: 0.7em;
-        display: block;
-        position: relative;
-        .search-item {
-          position: relative;
-          input {
-            height: 100%;
-            width: 100%;
-            border: 0;
-            background-color: $color-grey-ligth2;
-            padding: 0.5em 0;
-            border-radius: 5px;
-            &::placeholder {
-              color: $color-grey-ligth6;
-              padding-left: 2em;
-            }
-          }
-          .icon-search {
-            color: $color-grey;
-            position: absolute;
-            left: 5px;
-            top: 8px;
-          }
-        }
-      }
+
       .line3 {
         margin-top: 1.7em;
         display: flex;
