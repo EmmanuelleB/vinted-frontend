@@ -44,7 +44,9 @@ const Home = (props) => {
   }, [page, offersByPage, title, sort, finalValue, setData, setIsLoading]);
 
   return isLoading ? (
-    <span>En cours de chargement</span>
+    <div className="center">
+      <ReactLoading type="bubbles" color="#0cadb7" height={300} width={150} />
+    </div>
   ) : (
     <div>
       <HeroHeader token={token} handleSend={handleSend} />

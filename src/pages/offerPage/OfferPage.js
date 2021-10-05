@@ -70,7 +70,9 @@ const OfferPage = (props) => {
   return (
     <div className="offerPage-container">
       {isLoading ? (
-        <span>En cours de chargement</span>
+        <div className="center">
+          <ReactLoading type="bubbles" color="#0cadb7" height={300} width={150} />
+        </div>
       ) : (
         <div className="page-container">
           <div className="col-1">

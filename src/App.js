@@ -50,13 +50,12 @@ function App() {
 
   const [isHamburgerModalOpen, setIsHamburgerModalOpen] = useState(false);
 
-    const handleOpenHamburgerModal = () => {
+  const handleOpenHamburgerModal = () => {
     setIsHamburgerModalOpen(true);
-  
   };
-  const  handleCloseHamburgerModal = ()=>{
+  const handleCloseHamburgerModal = () => {
     setIsHamburgerModalOpen(false);
-  }
+  };
 
   const handleOpenSignupModal = () => {
     setIsSignupModalOpen(true);

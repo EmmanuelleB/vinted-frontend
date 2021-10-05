@@ -1,48 +1,40 @@
 @import "../color/Color.scss";
 
+.bloc1 {
+  border-bottom: 1px solid $color-grey-background;
+  padding-bottom: 1.5em;
 
-    .bloc1 {
-        border-bottom: 1px solid $color-grey-background;
-        padding-bottom: 1.5em;
-      
-        h2 {
-            padding-bottom: 1em;
-         
-        }
-        p {
-            line-height: 24px;
-            .grey-txt{
-                color:$color-grey-2;
-            }
-        }
-      }
-    
-      
-      .bloc2 {
-        padding: 1.5em 0;
-        h3{
-            line-height: 24px;
-        }
-        p{
-            margin: 1em 0;   
-        }
-        .grey-txt{
-            color:$color-grey-2;
-        }
-        .avatar {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            .avatar-img {
-                width: 25px;
-                height: 25px;
-                border-radius: 50%;
-                margin-right: 8px;
-              }
-          
-        }
-      }
+  h2 {
+    padding-bottom: 1em;
+  }
+  p {
+    line-height: 24px;
+    .grey-txt {
+      color: $color-grey-2;
+    }
+  }
+}
 
-
-
-
+.bloc2 {
+  padding: 1.5em 0;
+  h3 {
+    line-height: 24px;
+  }
+  p {
+    margin: 1em 0;
+  }
+  .grey-txt {
+    color: $color-grey-2;
+  }
+  .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .avatar-img {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+  }
+}

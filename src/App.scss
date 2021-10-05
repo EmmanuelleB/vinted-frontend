@@ -1,11 +1,9 @@
-
 @import "./components/color/Color.scss";
 
 /* Other rules */
 .page-container {
   max-width: 1200px;
   margin: 0 auto;
-
 }
 
 /* BUTTONS*/
@@ -72,6 +70,13 @@ button {
 
 .bold {
   font-weight: 700;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 90vh;
 }
 
 @media (max-width: 1200px) {
