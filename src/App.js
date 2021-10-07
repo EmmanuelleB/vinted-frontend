@@ -10,6 +10,7 @@ import Home from "./pages/home/Home";
 import OfferPage from "./pages/offerPage/OfferPage";
 import Publish from "./pages/publish/Publish";
 import Payment from "./pages/payment/Payment";
+import Footer from "./components/footer/Footer";
 // import Signup from "./pages/signup/Signup";
 // import Login from "./pages/login/Login";
 
@@ -146,6 +147,7 @@ function App() {
           </Route>
         </Switch>
       </div>
+      <Footer />
     </Router>
   );
 }

@@ -1,0 +1,17 @@
+@import "../color/Color.scss";
+
+.footer-container {
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  background-color: $color-blue;
+  color: white;
+  p {
+    font-size: 12px;
+    color: white;
+    font-weight: normal;
+    span {
+      font-weight: 700;
+    }
+  }
+}
